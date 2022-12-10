@@ -1,4 +1,4 @@
-.teste {
+.div-search {
   max-width: 1124px;
   margin: auto;
   height: 100vh;
@@ -8,7 +8,7 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.teste1{
+.title-search{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   line-height: 1.25;
@@ -98,4 +98,11 @@ button {
   border-style: outset;
   border-color: buttonborder;
   border-image: initial;
+}
+
+mat-list-item{
+  border: 1px solid #04070e;
+}
+.mdc-list{
+  max-height: max-content;
 }

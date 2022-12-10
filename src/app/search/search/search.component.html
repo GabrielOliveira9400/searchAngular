@@ -1,0 +1,18 @@
+<div id="__next">
+  <div class="div-search">
+     <main>
+        <h1 class="title-search">Sua pesquisa em um piscar de olhos!</h1>
+        <form class="form" [formGroup]="form">
+          <input matInput class="input-search" formControlName="search" type="text" required="" placeholder="Digite o que deseja pesquisar" value="">
+          <button class="button-search" (click)="onSubmit()" type="submit">Pesquisar</button></form>
+     </main>
+     <mat-card *ngIf="result.length">
+    <mat-list>
+      <mat-list-item style="background-color: #bdc1c6;" *ngFor="let link of result">
+        <h3 style="color: black;" matListItemTitle>{{link.title}}</h3>
+        <a style="color: black;" href="{{ link.link }}" target="_blank" matListItemLine>[{{link.link}}]</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+  </div>
+</div>
